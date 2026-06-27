@@ -1,22 +1,107 @@
-/*
-====================================
- Project HOME v0.1 Alpha
- script.js
-====================================
-*/
+/* ==================================
+   Project HOME v0.1 Alpha
+   style.css
+================================== */
 
-console.log("🏠 Project HOME 起動");
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-// ページが読み込まれたら実行
-document.addEventListener("DOMContentLoaded", () => {
+/* ページ全体 */
+body {
+    background: #0080c8;
+    font-family: Verdana, Arial, sans-serif;
+    color: #000;
+    padding: 20px;
+}
 
-    console.log("ページの読み込みが完了しました！");
+/* ヘッダー */
+header {
+    background: #ffffff;
+    border: 3px solid #003399;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-    // アクセスカウンター（土台）
-    const counter = document.getElementById("counter");
+header h1 {
+    color: #003399;
+    margin-bottom: 10px;
+}
 
-    if (counter) {
-        counter.textContent = "00000001";
+/* メニュー */
+nav {
+    background: #ffffff;
+    border: 3px solid #003399;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background: #dbe8ff;
+    border: 2px solid #003399;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background: #b8d4ff;
+}
+
+/* コンテンツ */
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background: #ffffff;
+    border: 3px solid #003399;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #003399;
+    margin-bottom: 15px;
+}
+
+/* 更新履歴 */
+ul {
+    padding-left: 20px;
+}
+
+/* フッター */
+footer {
+    background: #ffffff;
+    border: 3px solid #003399;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
     }
 
-});
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+}
