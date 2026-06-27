@@ -1,0 +1,22 @@
+/*
+====================================
+ Project HOME v0.1 Alpha
+ script.js
+====================================
+*/
+
+console.log("🏠 Project HOME 起動");
+
+// ページが読み込まれたら実行
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("ページの読み込みが完了しました！");
+
+    // アクセスカウンター（土台）
+    const counter = document.getElementById("counter");
+
+    if (counter) {
+        counter.textContent = "00000001";
+    }
+
+});
